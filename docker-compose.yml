@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+
+  #Node-Red
+  node-red:
+    image: stelzer77/node-red-armhf
+    volumes:
+      - node-red-data:/data
+    ports:
+      - "1880:1880"
+#    environment:
+#      - FLOWS=flows.json
+
+volumes:
+  node-red-data:
+    external:
+      name: node-red-data-volume
+  log-data:
+    external:
+      name: log-data-volume

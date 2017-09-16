@@ -16,8 +16,7 @@ WORKDIR /usr/src/node-red
 
 #Install additianl plugins (called nodes)
 run npm install \
-                node-red-contrib-luxtronik2-ws \
-#                node-red-contrib-luxtronik2 \
+                node-red-contrib-luxtronik2 \
                 node-red-contrib-azureiothubnode \
                 node-red-contrib-knxjs \
                 node-red-contrib-influxdb
